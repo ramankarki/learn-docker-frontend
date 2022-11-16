@@ -1,0 +1,16 @@
+name: CICD
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  check-haneko:
+    if: github.repository == 'ramankarki/learn-docker-frontend'
+    name: 'Atikai check haneko'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'linux version check haneko'
+        run: cat /etc/os-release
