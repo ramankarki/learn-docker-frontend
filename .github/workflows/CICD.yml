@@ -11,6 +11,8 @@ jobs:
     if: github.repository == 'ramankarki/learn-docker-frontend'
     name: 'Atikai check haneko'
     runs-on: ubuntu-latest
+
     steps:
+      - uses: actions/checkout@v3
       - name: 'linux version check haneko'
         run: cat /etc/os-release
