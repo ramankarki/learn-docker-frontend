@@ -8,7 +8,7 @@ on:
 
 jobs:
   check-haneko:
-    if: github.repository == 'ramankarki/learn-docker-frontend'
+    # if: github.repository == 'ramankarki/learn-docker-frontend'
     name: 'Atikai check haneko'
     runs-on: ubuntu-latest
 
